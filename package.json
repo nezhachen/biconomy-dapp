@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "ts-node -r dotenv/config index.ts",
+    "dev": "nodemon --exec ts-node -r dotenv/config index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +16,9 @@
     "tslib": "^2.6.2"
   },
   "dependencies": {
-    "@biconomy/account": "^4.1.1"
+    "@biconomy/account": "^4.1.1",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
